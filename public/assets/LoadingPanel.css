@@ -1,0 +1,7 @@
+.loading_panel
+{
+	float: right; 
+	position: relative; 
+	left: -8px; 
+	top: 8px;
+}

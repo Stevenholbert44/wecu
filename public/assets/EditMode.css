@@ -1,0 +1,53 @@
+/* Edit Mode Styles */
+form.EditMode .RadDockingZone
+{
+	background: white;
+	border: solid 1px red;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.EditMode .RightPane .RadDockingZone
+{
+	height: 200px;
+	min-height: 200px;
+	width: 150px;
+}
+form.EditMode .BottomPane .RadDockingZone
+{
+	height: 200px;
+	min-height: 200px;
+}
+
+form.EditMode .LeftPane .RadDockingZone
+{
+	height: 400px;
+	min-height: 400px;
+}
+
+form.EditMode .ContentPane .RadDockingZone
+{
+	height: 700px;
+	min-height: 700px;
+}
+
+form.EditMode .ModuleOuterContainer
+{
+	padding: 0px;
+}
+
+.RadDockableObjectTitle 
+{
+	width:100%;
+}
+
+.RadDockableObjectDisabled .RadDockableObjectTitleBar 
+{
+	padding-bottom:28px;
+}
+
+.edit-mode-draggable {
+	color:Red;
+	font-weight:bold;
+}

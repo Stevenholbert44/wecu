@@ -1,0 +1,12 @@
+﻿#chart_container {
+	display: inline-table;
+}
+
+.form_group {
+	line-height: normal;
+}
+
+input.input_money.required.money {
+	display: block;
+	margin-bottom: -10px;
+}

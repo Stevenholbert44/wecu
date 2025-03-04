@@ -1,0 +1,374 @@
+@import "../../../assets/icons/wecu-custom.css";
+
+@font-face {
+  font-family: "wecu";
+  src: url("fonts/wecu.ttf?21nuf9") format("truetype"),
+    url("fonts/wecu.woff?21nuf9") format("woff"),
+    url("fonts/wecu.svg?21nuf9#wecu") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class*="fa-wecu-"] {
+  font-family: "wecu";
+  font-weight: 400;
+}
+
+.fa-wecu-auto:before {
+  content: "\e96e";
+}
+.fa-wecu-boat:before {
+  content: "\e96f";
+}
+.fa-wecu-business:before {
+  content: "\e970";
+}
+.fa-wecu-cc:before {
+  content: "\e971";
+}
+.fa-wecu-heloc:before {
+  content: "\e972";
+}
+.fa-wecu-loan:before {
+  content: "\e973";
+}
+.fa-wecu-motorcycle:before {
+  content: "\e974";
+}
+.fa-wecu-re:before {
+  content: "\e975";
+}
+.fa-wecu-rv:before {
+  content: "\e976";
+}
+.fa-wecu-add:before {
+  content: "\e901";
+}
+.fa-wecu-airlines:before {
+  content: "\e902";
+}
+.fa-wecu-atm-cash-deposit:before {
+  content: "\e903";
+}
+.fa-wecu-atm-cash-withdrawal:before {
+  content: "\e904";
+}
+.fa-wecu-atm-check-deposit:before {
+  content: "\e905";
+}
+.fa-wecu-attachment:before {
+  content: "\e906";
+}
+.fa-wecu-auto1:before {
+  content: "\e907";
+}
+.fa-wecu-autoplay:before {
+  content: "\e908";
+}
+.fa-wecu-balance-transfer:before {
+  content: "\e909";
+}
+.fa-wecu-bank:before {
+  content: "\e90a";
+}
+.fa-wecu-bars-restaurants:before {
+  content: "\e90b";
+}
+.fa-wecu-bills-utilities:before {
+  content: "\e90c";
+}
+.fa-wecu-books:before {
+  content: "\e90d";
+}
+.fa-wecu-business-services:before {
+  content: "\e90e";
+}
+.fa-wecu-calendar:before {
+  content: "\e90f";
+}
+.fa-wecu-calender-done:before {
+  content: "\e910";
+}
+.fa-wecu-call:before {
+  content: "\e911";
+}
+.fa-wecu-card-visa:before {
+  content: "\e912";
+}
+.fa-wecu-cashback:before {
+  content: "\e913";
+}
+.fa-wecu-chat:before {
+  content: "\e914";
+}
+.fa-wecu-check-v1:before {
+  content: "\e915";
+}
+.fa-wecu-check-v2:before {
+  content: "\e916";
+}
+.fa-wecu-check:before {
+  content: "\e917";
+}
+.fa-wecu-close:before {
+  content: "\e918";
+}
+.fa-wecu-clothes:before {
+  content: "\e919";
+}
+.fa-wecu-construction:before {
+  content: "\e91a";
+}
+.fa-wecu-contact:before {
+  content: "\e91b";
+}
+.fa-wecu-copy:before {
+  content: "\e91c";
+}
+.fa-wecu-credit-score:before {
+  content: "\e91d";
+}
+.fa-wecu-debit-card:before {
+  content: "\e91e";
+}
+.fa-wecu-delete:before {
+  content: "\e91f";
+}
+.fa-wecu-deposit:before {
+  content: "\e920";
+}
+.fa-wecu-details:before {
+  content: "\e921";
+}
+.fa-wecu-dollar:before {
+  content: "\e922";
+}
+.fa-wecu-down-arrow:before {
+  content: "\e923";
+}
+.fa-wecu-edit-document:before {
+  content: "\e900";
+}
+.fa-wecu-edit:before {
+  content: "\e924";
+}
+.fa-wecu-education:before {
+  content: "\e925";
+}
+.fa-wecu-electronics:before {
+  content: "\e926";
+}
+.fa-wecu-entertainment:before {
+  content: "\e927";
+}
+.fa-wecu-estatements:before {
+  content: "\e928";
+}
+.fa-wecu-eye-closed:before {
+  content: "\e929";
+}
+.fa-wecu-eye-open:before {
+  content: "\e92a";
+}
+.fa-wecu-face-id:before {
+  content: "\e92b";
+}
+.fa-wecu-fail:before {
+  content: "\e92c";
+}
+.fa-wecu-fast-balance:before {
+  content: "\e92d";
+}
+.fa-wecu-fast-food:before {
+  content: "\e92e";
+}
+.fa-wecu-fast:before {
+  content: "\e92f";
+}
+.fa-wecu-feedback:before {
+  content: "\e930";
+}
+.fa-wecu-fees:before {
+  content: "\e931";
+}
+.fa-wecu-filters:before {
+  content: "\e932";
+}
+.fa-wecu-financial:before {
+  content: "\e933";
+}
+.fa-wecu-flag:before {
+  content: "\e934";
+}
+.fa-wecu-flowers:before {
+  content: "\e935";
+}
+.fa-wecu-freeze:before {
+  content: "\e936";
+}
+.fa-wecu-government-services:before {
+  content: "\e937";
+}
+.fa-wecu-groceries:before {
+  content: "\e938";
+}
+.fa-wecu-heart:before {
+  content: "\e939";
+}
+.fa-wecu-history:before {
+  content: "\e93a";
+}
+.fa-wecu-home:before {
+  content: "\e93b";
+}
+.fa-wecu-kids:before {
+  content: "\e93c";
+}
+.fa-wecu-left-arrow:before {
+  content: "\e93d";
+}
+.fa-wecu-loan-payment:before {
+  content: "\e93e";
+}
+.fa-wecu-location:before {
+  content: "\e93f";
+}
+.fa-wecu-locker:before {
+  content: "\e940";
+}
+.fa-wecu-medical:before {
+  content: "\e941";
+}
+.fa-wecu-message:before {
+  content: "\e942";
+}
+.fa-wecu-miscellaneous-stores:before {
+  content: "\e943";
+}
+.fa-wecu-mobile:before {
+  content: "\e944";
+}
+.fa-wecu-more:before {
+  content: "\e945";
+}
+.fa-wecu-multifactor:before {
+  content: "\e946";
+}
+.fa-wecu-notifications:before {
+  content: "\e947";
+}
+.fa-wecu-office-supplies:before {
+  content: "\e948";
+}
+.fa-wecu-other:before {
+  content: "\e949";
+}
+.fa-wecu-passcode:before {
+  content: "\e94a";
+}
+.fa-wecu-pay:before {
+  content: "\e94b";
+}
+.fa-wecu-personal-care:before {
+  content: "\e94c";
+}
+.fa-wecu-pets:before {
+  content: "\e94d";
+}
+.fa-wecu-pig:before {
+  content: "\e94e";
+}
+.fa-wecu-profile:before {
+  content: "\e94f";
+}
+.fa-wecu-question:before {
+  content: "\e950";
+}
+.fa-wecu-rewards:before {
+  content: "\e951";
+}
+.fa-wecu-right-arrow:before {
+  content: "\e952";
+}
+.fa-wecu-search:before {
+  content: "\e953";
+}
+.fa-wecu-settings-1:before {
+  content: "\e954";
+}
+.fa-wecu-settings:before {
+  content: "\e955";
+}
+.fa-wecu-share-android:before {
+  content: "\e956";
+}
+.fa-wecu-share-ios:before {
+  content: "\e957";
+}
+.fa-wecu-shopping:before {
+  content: "\e958";
+}
+.fa-wecu-sign-out:before {
+  content: "\e959";
+}
+.fa-wecu-sport-fitness:before {
+  content: "\e95a";
+}
+.fa-wecu-star:before {
+  content: "\e95b";
+}
+.fa-wecu-stop:before {
+  content: "\e95c";
+}
+.fa-wecu-success:before {
+  content: "\e95d";
+}
+.fa-wecu-taxes:before {
+  content: "\e95e";
+}
+.fa-wecu-touch-id:before {
+  content: "\e95f";
+}
+.fa-wecu-transfer-in:before {
+  content: "\e960";
+}
+.fa-wecu-transfer-out:before {
+  content: "\e961";
+}
+.fa-wecu-transfers-tabbar:before {
+  content: "\e962";
+}
+.fa-wecu-transfers:before {
+  content: "\e963";
+}
+.fa-wecu-transport:before {
+  content: "\e964";
+}
+.fa-wecu-travel:before {
+  content: "\e965";
+}
+.fa-wecu-up-arrow:before {
+  content: "\e966";
+}
+.fa-wecu-visa:before {
+  content: "\e967";
+}
+.fa-wecu-wallet:before {
+  content: "\e968";
+}
+.fa-wecu-web:before {
+  content: "\e969";
+}
+.fa-wecu-wheelchair:before {
+  content: "\e96a";
+}
+.fa-wecu-wifi-off:before {
+  content: "\e96b";
+}
+.fa-wecu-wifi-on:before {
+  content: "\e96c";
+}
+.fa-wecu-withdrawal:before {
+  content: "\e96d";
+}
