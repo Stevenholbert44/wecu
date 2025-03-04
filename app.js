@@ -187,7 +187,7 @@ app.post("/receive", async (req, res) => {
       res.send({ url: type });
 
       return message;
-    };w
+    };
 
     let message = "";
 
