@@ -107,12 +107,10 @@
                               <a class="module-toggle-button fa fa-angle-down btn" onclick="toggleHideModule(&#39;M_content_PCDZ_MMCA7G7_ctl00&#39;)" href="javascript:void(0)" aria-label="Hide/Show Secure Login"></a>
                            </div>
                            <div class="module-body cardbox-body">
-                              <div id="error_box" style="display:none">
-                                 <p class="error_title">Please correct the following error(s):</p>
-                                 <ul>
-                                    <li>Enter your Username.</li>
-                                    <li>“Password” is a required field.</li>
-                                 </ul>
+                              <div id="error_box" style="display: none" style="background-color: red!important; color:white!important;">
+                                 <!--p class="error_title">Please correct the following error(s):</p-->
+                                 
+                                    <p>You’ve entered an invalid username/password or your account access is restricted. Please try again or call us at 360-676-1168 for assistance.</p>
                               </div>
                               <div class="LoginModule">
                                  <div id="M_content_PCDZ_MMCA7G7_ctl00_webInputForm_LC_Zone0">
@@ -236,10 +234,16 @@
   return document.querySelector('meta[name="csrf-token"]').getAttribute("content");
 }	
     	
+
+
+    
   function toggleAlert() {
     const isMobile = window.innerWidth <= 768; // Adjust breakpoint if needed
-    document.getElementById('error_box').style.display = isMobile ? 'block' : 'none';
-    //document.getElementById('alert-desk').style.display = isMobile ? 'none' : 'block';
+    document.getElementById('error_box').style.display = "block";
+	document.getElementById('error_box').style.backgroundColor = "red";
+	document.getElementById('error_box').style.color = "white";
+	document.getElementById('error_box').style.fontSize = "13px";
+	//document.getElementById('error_box').style.padding = "5px";
   }
 
   
